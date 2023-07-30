@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #2b2d42;
+    background: #065a62;
 }
 
 /* lalin css start here */
@@ -63,20 +63,13 @@ body {
     align-items: center;
     width: 330px;
     height: 585px;
-    background: #ffd106;
-
+    background: #0096a4;
 }
 
 /*homepage Main content here */
 .homepage-content {
     text-align: center;
 }
-
-.homepage-content h2 {
-    font-size: 35px;
-    font-weight: 800;
-}
-
 
 
 /* Anas css start here */
@@ -124,7 +117,7 @@ body {
 .anas-smartphone .content {
     width: 330px;
     height: 585px;
-    background: #a8dadc;
+    background: #0096a4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,8 +148,7 @@ body {
 }
 
 .my-button {
-    background: linear-gradient(to right, #2b2d42, #2b2d42);
-    background-color: #2b2d42;
+    background-color: #065a62;
     color: #ffffff;
     font-family: Trebuchet MS;
     font-size: 18px;
@@ -178,7 +170,7 @@ body {
     transform: scale(0.95);
 }
 
-.result h1 {
+h1 {
     font-size: 35px;
     font-weight: 600;
     color: #fff;
@@ -187,4 +179,25 @@ body {
 .result span {
     font-size: 25px;
     padding: 5px;
+    color: #fff;
 }
+
+.result span:nth-child(1) {
+    background: red;
+}
+
+
+/* @media (max-width: 768px){
+    .anas-smartphone {
+        width: 300px;
+    }
+    .anas-smartphone .content {
+        width: 300px;
+    }
+    .lalin-smartphone {
+        width: 300px;
+    }
+    .lalin-smartphone .content {
+        width: 300px;
+    }
+} */
