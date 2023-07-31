@@ -171,6 +171,7 @@ h1 {
     -webkit-background-clip: text;
     animation: header 15s linear infinite;
     font-weight: 900;
+    padding-top: 30px;
 }
 
 .box {
@@ -578,6 +579,7 @@ h1 {
 
     .box h1 {
         font-size: 30px;
+        padding-top: 30px;
     }
 
     .anas-smartphone {
