@@ -1,25 +1,34 @@
 document.getElementById('getNamota').addEventListener('click', function () {
 
-    document.getElementById('no-more').style.display = 'none'
+
 
     const inputData = document.getElementById('getInput').value;
     const finalInputData = parseInt(inputData)
+    let final = ''
 
-
+    console.log(final);
     if (inputData === '') {
-        alert('Field should no empty')
-        document.getElementById('no-more').style.display = 'block'
-    } else {
+        document.getElementById('errors').innerHTML = 'Field should not empty'
+        document.getElementById('errors').style.color = 'red'
 
+
+    } else {
+        document.getElementById('no-more').style.display = 'none'
+        document.getElementById('errors').innerHTML = ''
         // result show hre
         let getResult = document.getElementById('resultShow')
-        let final = ''
+
         let html = ''
         for (let i = 1; i <= 10; i++) {
             final = i * finalInputData
             html += (`
 
-            ${finalInputData} × ${i} = ${finalInputData * i + "<br/>"} `);
+            <p class='resultDataCustom'>
+            <span>${finalInputData}</span> × <span>${i}</span> = <span> ${finalInputData * i + "<br/>"}</span>
+            </p>
+
+
+             `);
             document.getElementById('getInput').value = ''
 
         }

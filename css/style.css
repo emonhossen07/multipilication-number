@@ -260,15 +260,93 @@ h1 {
     }
 }
 
-
-
 /* For Main Page */
-
 .mobile-bar {
     background: #F6F2F7 !important;
     padding: 20px;
-    position: absolute;
-    right: 0;
+}
+
+/* .resultDataCustom {
+    background: #efe9e9;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+ */
+.result {
+    padding-top: 20px;
+}
+
+.resultDataCustom:nth-child(1) {
+    margin-top: 0px;
+}
+
+.resultDataCustom span {
+    text-align: left !important;
+    font-size: 18px;
+}
+
+/* For Coming Result */
+
+#resultShow {
+    text-align: left;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultShow p {
+    margin-top: 2px;
+    padding: 3px;
+}
+
+#resultShow p:nth-child(1) {
+    margin-top: 0px;
+}
+
+#resultShow p:nth-child(odd) {
+    border-top: 2px solid #5003d5;
+}
+
+#resultShow p:nth-child(even) {
+    border-bottom: 2px solid #9e07e9;
+}
+
+/* For Default Result */
+.result {
+    text-align: left;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.result p {
+    margin-top: 4px;
+    padding: 3px;
+}
+
+.result p:nth-child(1) {
+    margin-top: 0px;
+}
+
+.result p:nth-child(odd) {
+    border-top: 2px solid #5003d5;
+}
+
+.result p:nth-child(even) {
+    border-bottom: 2px solid #9e07e9;
+}
+
+.left-side {
+    float: left;
+}
+
+.right-side {
+    float: right;
+}
+
+.box a {
+    text-decoration: none;
 }
 
 
@@ -276,47 +354,7 @@ h1 {
 
 
 
-
-
-
-
-
-
 /* Rudddro code end here */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -437,11 +475,10 @@ h1 {
 /* The screen (or content) of the device */
 .anas-smartphone .content {
     width: 100%;
-    height: 515px;
+    height: 535px;
     background: #f6f2f7;
-    padding-top: 75px;
+    padding-top: 40px;
 }
-
 
 .multiplication_table {
     text-align: center;
@@ -485,11 +522,11 @@ h1 {
     border: 0px solid #000;
     border-radius: 0px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .my-button:hover {
-    background: linear-gradient(to right, #5a5b66, #5a5b66);
-    background-color: #5a5b66;
+    background: black;
 }
 
 .my-button:active {
@@ -506,25 +543,70 @@ h1 {
     padding-top: 20px;
 }
 
-.result span {
 
-    font-size: 25px;
-    padding: 5px;
-    color: #000000;
-}
+@media (max-width: 768px) {
+    /* .area {
+        background: #4e54c8;
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+        width: 100%;
+        height: 100vh;
+    } */
 
-
-/* @media (max-width: 768px){
-    .anas-smartphone {
-        width: 300px;
-    }
-    .anas-smartphone .content {
-        width: 300px;
-    }
-    .lalin-smartphone {
-        width: 300px;
-    }
     .lalin-smartphone .content {
-        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 100%;
+        background: #f6f2f7;
     }
-} */
+
+    .lalin-smartphone {
+        width: auto;
+        height: auto;
+        position: absolute;
+        margin: 10px;
+        border: 16px white solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        border-radius: 36px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999999;
+    }
+
+    .box h1 {
+        font-size: 40px;
+    }
+
+    .anas-smartphone {
+        width: auto;
+        height: auto;
+        position: absolute;
+        margin: 10px;
+        border: 16px white solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        border-radius: 36px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999999;
+        color: black;
+    }
+
+    .anas-smartphone .content {
+        width: auto;
+        height: 90%;
+        background: #f6f2f7;
+        padding-top: 40px;
+    }
+
+    .result {
+        padding-top: 70px;
+    }
+
+}
